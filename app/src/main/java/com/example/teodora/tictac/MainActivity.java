@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void updatePointsText(){
         textViewPlayer1.setText("Player 1:"+player1Points);
-        textViewPlayer2.setText("Player 1:"+player2Points);
+        textViewPlayer2.setText("Player 2:"+player2Points);
     }
 
     private void resetBoard(){
@@ -155,6 +155,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         outState.putInt("roundCount", roundCount);
         outState.putInt("player1Points",player1Points);
         outState.putInt("player2Points",player2Points);
+        outState.putBoolean("player1Turn",player1Turn);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        roundCount = savedInstanceState.getInt("roundCount");
+        player1Points = savedInstanceState.getInt("player1Points");
+        player2Points = savedInstanceState.getInt("player2Points");
+        player1Turn = savedInstanceState.getBoolean("player1Turn");
 
     }
+
+
 }
