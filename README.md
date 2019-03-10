@@ -1,2 +1,2 @@
 ## Demo 
-[TicTacToe Android Game Demo](https://photos.app.goo.gl/cCnAt1CLFd1XXwca9)
+[TicTacToe Game](https://photos.app.goo.gl/cCnAt1CLFd1XXwca9)
